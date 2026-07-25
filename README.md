@@ -1,8 +1,8 @@
-Full Name = Shahnawaz Shaikh
-Intern ID
-Email Address = shahnawazshaikh67967@gmail.com
-GitHub Username = shkshhnwz
-Selected Website = https://excellenceinternationalschool.com/
-Live Demo Link = yet to come
-Technologies Used = MERN stack
-Key Improvements Made = Yet to Come
+-Full Name = Shahnawaz Shaikh
+-Intern ID
+-Email Address = shahnawazshaikh67967@gmail.com
+-GitHub Username = shkshhnwz
+-Selected Website = https://excellenceinternationalschool.com/
+-Live Demo Link = yet to come
+-Technologies Used = MERN stack
+-Key Improvements Made = Yet to Come

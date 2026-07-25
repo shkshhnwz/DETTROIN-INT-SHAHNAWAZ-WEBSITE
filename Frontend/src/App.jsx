@@ -6,10 +6,12 @@ import AboutUs from './components/AboutUs/Aboutus'
 import Contact from './components/Contact/Contact'
 import Admission from './components/AdmissionForm/Admission'
 import AdmissionProcedure from './components/AdmissionForm/AdmissionProcedure'
+import InfoofSchool from './components/InfoofSchool/InfoofSchool';
 import Footer from './components/Footer/Footer';
 import { motion } from 'motion/react'
 
 import './components/Hero/Hero.css'
+import InfoofService from './components/InfoofSchool/InfoofSchool';
 
 function App() {
     const location = useLocation();
@@ -19,22 +21,7 @@ function App() {
         {
             label: 'Academics',
             href: '#academics',
-            dropdown: [
-                {
-                    title: 'Our Programs',
-                    categories: [
-                        {
-                            header: 'Pre-Primary & Primary',
-                            links: [
-                                { label: 'Pre Primary School', href: '/academics/pre-primary' },
-                                { label: 'Primary School', href: '/academics/primary' }
-                            ]
-                        },
-                        
-                    ]
-                }
-            ]
-        },
+            },
         {
             label: 'Admission',
             href: '#admission',
@@ -77,6 +64,7 @@ function App() {
                 {/* Fallback to Hero for other paths for now */}
                 <Route path="*" element={<Hero />} />
             </Routes>
+            <InfoofSchool/>
             <Footer/>
         </div>
     );
