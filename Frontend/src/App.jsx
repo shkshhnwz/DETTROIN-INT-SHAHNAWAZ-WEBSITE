@@ -4,6 +4,7 @@ import PillNav from './ui/PillNav/PillNav'
 import Hero from './components/Hero/Hero'
 import AboutUs from './components/AboutUs/Aboutus'
 import Contact from './components/Contact/Contact'
+import Admission from './components/AdmissionForm/Admission'
 import Footer from './components/Footer/Footer';
 import { motion } from 'motion/react'
 
@@ -70,6 +71,7 @@ function App() {
                 <Route path="/home" element={<Hero />} />
                 <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/admission/enquiry-form" element={<Admission />} />
                 {/* Fallback to Hero for other paths for now */}
                 <Route path="*" element={<Hero />} />
             </Routes>
