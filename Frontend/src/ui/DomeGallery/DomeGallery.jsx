@@ -3,6 +3,46 @@ import { useGesture } from '@use-gesture/react';
 import './DomeGallery.css';
 
 const DEFAULT_IMAGES = [
+    {
+    src: 'https://res.cloudinary.com/dlo9twyi8/image/upload/v1785016460/11.jpg_fw3dky.webp',
+    alt: 'Abstract art'
+  },
+  {
+    src: 'https://res.cloudinary.com/dlo9twyi8/image/upload/v1785016460/12.jpg_iqcy2v.webp',
+    alt: 'Abstract art'
+  },
+  {
+    src: 'https://res.cloudinary.com/dlo9twyi8/image/upload/v1785016461/18.jpg_miimpl.webp',
+    alt: 'Abstract art'
+  },
+  {
+    src: 'https://res.cloudinary.com/dlo9twyi8/image/upload/v1785016462/23_blnphe.webp',
+    alt: 'Abstract art'
+  },
+  {
+    src: 'https://res.cloudinary.com/dlo9twyi8/image/upload/v1785016463/25_gmwpw5.webp',
+    alt: 'Abstract art'
+  },
+  {
+    src: 'https://res.cloudinary.com/dlo9twyi8/image/upload/v1785016465/26_jrdas6.webp',
+    alt: 'Abstract art'
+  },
+  {
+    src: 'https://res.cloudinary.com/dlo9twyi8/image/upload/v1785016466/5.jpg_lrg9db.webp',
+    alt: 'Abstract art'
+  },
+  {
+    src: 'https://res.cloudinary.com/dlo9twyi8/image/upload/v1785016495/6.jpg_bf4fwi.webp',
+    alt: 'Abstract art'
+  },
+  {
+    src: 'https://res.cloudinary.com/dlo9twyi8/image/upload/v1785016497/8.jpg_w8agx2.webp',
+    alt: 'Abstract art'
+  },
+  {
+    src: 'https://res.cloudinary.com/dlo9twyi8/image/upload/v1785016499/9.jpg_iefngl.webp',
+    alt: 'Abstract art'
+  },
   {
     src: 'https://res.cloudinary.com/dlo9twyi8/image/upload/v1785005373/7.jpg_yzns10.webp',
     alt: 'Abstract art'
