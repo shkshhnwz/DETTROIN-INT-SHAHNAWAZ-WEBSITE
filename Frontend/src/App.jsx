@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact'
 import Admission from './components/AdmissionForm/Admission'
 import AdmissionProcedure from './components/AdmissionForm/AdmissionProcedure'
 import InfoofSchool from './components/InfoofSchool/InfoofSchool';
+import DomeGalleryComponent from './components/Gallery/Gallery';
 import Footer from './components/Footer/Footer';
 import { motion } from 'motion/react'
 
@@ -61,6 +62,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/admission/enquiry-form" element={<Admission />} />
                 <Route path="/admission/procedure" element={<AdmissionProcedure />} />
+                <Route path="/gallery" element={<DomeGalleryComponent />} />
                 {/* Fallback to Hero for other paths for now */}
                 <Route path="*" element={<Hero />} />
             </Routes>
