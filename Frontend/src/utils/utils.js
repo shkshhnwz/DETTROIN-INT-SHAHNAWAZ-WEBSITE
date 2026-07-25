@@ -1,4 +1,4 @@
-const CLOUD_NAME = "dc9xarlgi"; 
+const CLOUD_NAME = "dlo9twyi8"; 
 
 /**
  * Generates an optimized Cloudinary URL

@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import PillNav from './ui/PillNav/PillNav'
 import Hero from './components/Hero/Hero'
 import AboutUs from './components/AboutUs/Aboutus'
+import Footer from './components/Footer/Footer';
 import { motion } from 'motion/react'
 
 import './components/Hero/Hero.css'
@@ -64,6 +65,7 @@ function App() {
                 {/* Fallback to Hero for other paths for now */}
                 <Route path="*" element={<Hero />} />
             </Routes>
+            <Footer/>
         </div>
     );
 }
