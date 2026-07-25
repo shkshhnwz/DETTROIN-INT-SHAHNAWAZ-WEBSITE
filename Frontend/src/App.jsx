@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import PillNav from './ui/PillNav/PillNav'
 import Hero from './components/Hero/Hero'
 import AboutUs from './components/AboutUs/Aboutus'
+import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer';
 import { motion } from 'motion/react'
 
@@ -57,11 +58,18 @@ function App() {
 
     return (
         <div className="app-container">
-            <PillNav items={navItems} brandName="Excellence" ctaText={null} />
+            <PillNav 
+                logo="https://res.cloudinary.com/dlo9twyi8/image/upload/v1785009037/Excellence-Logo.png_hlmych.webp"
+                logoAlt="Excellence International School Logo"
+                brandName="Excellence"
+                items={navItems} 
+                ctaText={null} 
+            />
             <Routes>
                 <Route path="/" element={<Hero />} />
                 <Route path="/home" element={<Hero />} />
                 <Route path="/about-us" element={<AboutUs />} />
+                <Route path="/contact" element={<Contact />} />
                 {/* Fallback to Hero for other paths for now */}
                 <Route path="*" element={<Hero />} />
             </Routes>
