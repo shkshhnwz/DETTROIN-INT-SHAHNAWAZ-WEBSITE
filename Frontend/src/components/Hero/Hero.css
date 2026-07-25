@@ -1,0 +1,389 @@
+/* Hero Component Specific Styling */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f5f5f7;
+  color: #1c1917;
+  font-family: 'Plus Jakarta Sans', 'Satoshi', sans-serif;
+  overflow-x: clip;
+  box-sizing: border-box;
+}
+
+/* Header Container centering */
+.pill-nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  box-sizing: border-box;
+  z-index: 99;
+}
+
+/* Replicating screenshot layout columns */
+.hero-grid-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1.1fr;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem;
+  gap: 2rem;
+  position: relative;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+@media (max-width: 1024px) {
+  .hero-grid-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    gap: 4rem;
+  }
+}
+
+/* Left Column */
+.hero-left-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .hero-left-col {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.hero-large-title {
+  font-size: 2.85rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #1c1917;
+  margin: 0 0 2rem 0;
+  letter-spacing: -1.5px;
+}
+
+@media (max-width: 768px) {
+  .hero-large-title {
+    font-size: 3.5rem;
+    letter-spacing: -1.5px;
+  }
+}
+
+.hero-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hero-bullet-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 12.5px;
+  color: #1c1917;
+  letter-spacing: 0.8px;
+}
+
+.bullet-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  color: #f472b6;
+}
+
+/* Middle Column - Stack Container styling */
+.hero-middle-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 420px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .hero-middle-col {
+    margin: 0 auto;
+  }
+}
+
+.stack-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.stack-bg-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.bg-purple {
+  background: #6d5b94;
+}
+
+.bg-pink {
+  background: #db8a99;
+}
+
+.bg-lavender {
+  background: #bbadd6;
+}
+
+.stack-main-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.stack-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Video Play Button Overlay */
+.video-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+}
+
+.play-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+  pointer-events: auto;
+  padding: 0;
+}
+
+.play-btn:hover {
+  transform: scale(1.08);
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.play-triangle {
+  font-size: 16px;
+  margin-left: 3px;
+  line-height: 1;
+}
+
+/* Right Column - Floating Card & Curved ribbon */
+.hero-right-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  min-height: 420px;
+}
+
+@media (max-width: 1024px) {
+  .hero-right-col {
+    align-items: center;
+    min-height: auto;
+  }
+}
+
+.floating-project-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 320px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  position: relative;
+}
+
+.project-img-wrapper {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.project-tag {
+  color: #c084fc;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-title {
+  color: #120f17;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.project-link-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #f4f4f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #71717a;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.project-link-btn:hover {
+  background: #e4e4e7;
+  color: #120f17;
+}
+
+/* Curved ribbon marquee */
+.curved-ribbon-container {
+  position: absolute;
+  bottom: -60px;
+  right: -120px;
+  width: 600px;
+  height: 240px;
+  pointer-events: none;
+  overflow: visible;
+}
+
+@media (max-width: 1024px) {
+  .curved-ribbon-container {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 2rem;
+  }
+}
+
+.curved-ribbon-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.ribbon-text {
+  font-size: 10px;
+  font-weight: 800;
+  fill: #851c5e;
+  letter-spacing: 2px;
+  font-family: 'Plus Jakarta Sans', 'Satoshi', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Simple Footer */
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.footer p {
+  font-size: 0.875rem;
+  color: #1c1917;
+  margin: 0;
+}
+
+.countries-loop-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0 2rem;
+  background: transparent;
+  margin-top: 0.5rem;
+  z-index: 2;
+  position: relative;
+}
+
+.countries-loop-title {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1c1917;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  font-family: 'Plus Jakarta Sans', 'Satoshi', sans-serif;
+  text-align: center;
+}
+
+.logo-loop-wrapper {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
